@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.training{
+    width: 100%;
+    background: url(bgcards.webp) center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.training h1{
+    text-align: center;
+    padding: 25px 0px;
+}
+
+
+.container{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.training-items{
+
+    flex-basis: 45%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px lightgrey ;
+    background: white;
+    text-align: center;
+    padding: 20px 0px ;
+}
+
+.training-items h3{
+    padding: 10px 0px ;
+}
+
+.training-items p{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.training-items button{
+    background: blue;
+    padding: 10px 25px ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px ;
+}
+
+.training-items:hover{
+    background: blue;
+
+}
+.training-items:hover h3 , .training-items:hover p{
+   color: white;
+
+}
+.training-items:hover button{
+    background: white;
+    color: blue;
+
+}
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .training-items{
+        margin: 10px;
+    }
+}
